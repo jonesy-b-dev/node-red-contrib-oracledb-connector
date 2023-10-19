@@ -1,0 +1,22 @@
+{
+  "name": "red-contrib-oracledb-connector",
+  "version": "0.0.1",
+  "description": "An example Node-RED node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonesy-b-dev/node-red-contrib-oracledb-connector.git"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "author": "Jonas de Bruin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jonesy-b-dev/node-red-contrib-oracledb-connector/issues"
+  },
+  "homepage": "https://github.com/jonesy-b-dev/node-red-contrib-oracledb-connector#readme"
+}
