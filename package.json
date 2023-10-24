@@ -1,6 +1,6 @@
 {
   "name": "red-contrib-oracledb-connector",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An example Node-RED node",
   "main": "index.js",
   "repository": {
@@ -12,7 +12,7 @@
   ],
   "node-red": {
     "nodes": {
-      "oracleCredentials" : "/configNode/config.js",
+      "oracleCredentials": "/configNode/config.js",
       "oracle-connector": "/connectorNode/oracle-connector.js"
     },
     "version": ">=3.0.0"
