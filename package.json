@@ -13,10 +13,19 @@
   "keywords": [
     "node-red"
   ],
+  "node-red": {
+    "nodes": {
+      "oracle-connector": "/oracle-connector.js"
+    },
+    "version": ">=3.0.0"
+  },
   "author": "Jonas de Bruin",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/jonesy-b-dev/node-red-contrib-oracledb-connector/issues"
   },
-  "homepage": "https://github.com/jonesy-b-dev/node-red-contrib-oracledb-connector#readme"
+  "homepage": "https://github.com/jonesy-b-dev/node-red-contrib-oracledb-connector#readme",
+  "dependencies": {
+    "oracledb": "^6.2.0"
+  }
 }

@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('oracle-connector', {
+        category: 'common',
+        color: '#f80808',
+        inputs: 1,
+        outputs: 1,
+        defaults: {
+            username: { value: "" },
+            password: { value: "" },
+            connectionStr: { value: "" }
+        },
+        label: function() {
+            return  'Oracle Connector';
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="oracle-connector">
+    <div class="form-row">
+        <label for="node-input-username"><i class="fa fa-user"></i> Username</label>
+        <input type="text" id="node-input-username" placeholder="Username">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-password"><i class="fa fa-key"></i> Password</label>
+        <input type="password" id="node-input-password" placeholder="Password">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-connectionStr"><i class="fa fa-link"></i> Connection String</label>
+        <input type="text" id="node-input-connectionStr" placeholder="Connection String">
+    </div>
+</script>
