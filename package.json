@@ -15,7 +15,8 @@
   ],
   "node-red": {
     "nodes": {
-      "oracle-connector": "/oracle-connector.js"
+      "oracleCredentials" : "/configNode/config.js",
+      "oracle-connector": "/connectorNode/oracle-connector.js"
     },
     "version": ">=3.0.0"
   },

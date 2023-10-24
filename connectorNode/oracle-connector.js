@@ -5,15 +5,17 @@ module.exports = function(RED) {
     {
         RED.nodes.createNode(this, config);
         var node = this;
+        this.connectionData = RED.nodes.getNode(config.connection)
 
         node.on('input', async function(msg) {
             // Read configuration from config object or credentials
             const dbconfig = {
-                user: config.username,
-                password: config.password,
-                connectString: config.connectionStr
+                username: this.connectionData.username,
+                password: this.connectionData.password,
+                connectString: this.connectionData.connectionString
             };
-            node.warn(dbconfig)
+
+            node.warn(dbconfig);
             // Multiline SQL query from the input message
             var sqlQuery = msg.payload;
             let connection;
@@ -56,12 +58,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType('oracle-connector', OracleConnector, {
-        credentials: 
-        {
-            username: { type: 'text' },
-            password: { type: 'password' },
-            connectionStr: { type: 'text' }
-        }
-    });
+    RED.nodes.registerType('oracle-connector', OracleConnector)
 };

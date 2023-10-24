@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType("oracleCredentials",{
+        category: 'config',
+        defaults: {
+            name: {value: ""},
+            username: {value: '', required:true},
+            password: {value: '', required:true},
+            connectionString: {value: '', required:true},
+        },
+        label: function() {
+            return this.name || "Oracle database credentials";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="oracleCredentials">
+    <div class="form-row">
+        <label for="node-config-input-name"><i class="fa fa-user"></i> Name</label>
+        <input type="text" id="node-config-input-name">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-username"><i class="fa fa-user"></i> Username</label>
+        <input type="text" id="node-config-input-username">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-password"><i class="fa fa-user"></i> Password</label>
+        <input type="password" id="node-config-input-password">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-connectionString"><i class="fa fa-key"></i> Connection string</label>
+        <input type="text" id="node-config-input-connectionString">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="oracleCredentials">
+    <p>Add here your connection details for the database, the connection string is in the format of `(ip:port/serviceusername)`</p>
+    <p><b>Note</b> I do not use or store your details anywhere then in the code variables, these variables are local and not visible to anyone else. If you don't believe it or you think it's not safe, don't use it or check the code yourself on the GitHub that you can find on the npm page.</p>
+</script>
