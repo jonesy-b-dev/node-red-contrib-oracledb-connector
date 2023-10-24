@@ -20,6 +20,10 @@
     },
     "version": ">=3.0.0"
   },
+  "engines": {
+    "npm": ">=10.0.0",
+    "node": ">=18.0.0"
+  },
   "author": "Jonas de Bruin",
   "license": "Apache-2.0",
   "bugs": {
