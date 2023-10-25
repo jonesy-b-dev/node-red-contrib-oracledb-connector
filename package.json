@@ -1,5 +1,5 @@
 {
-  "name": "red-contrib-oracledb-connector",
+  "name": "node-red-contrib-oracledb-connector",
   "version": "0.1.0",
   "description": "An example Node-RED node",
   "main": "index.js",
