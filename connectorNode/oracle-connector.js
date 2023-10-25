@@ -15,9 +15,8 @@ module.exports = function(RED) {
                 connectString: this.connectionData.connectionString
             };
 
-            node.warn(dbconfig);
             // Multiline SQL query from the input message
-            var sqlQuery = msg.payload;
+            var sqlQuery = msg[this.inputData];
             let connection;
             try 
             {
